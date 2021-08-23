@@ -1,19 +1,19 @@
 {
   "name": "valoriza",
   "version": "1.0.0",
-  "description": "Estudo de api, com node js",
   "main": "index.js",
+  "repository": "https://github.com/jian-kowalski/valoriza.git",
+  "author": "jian-kowalski <jian_kowalski@hotmail.com>",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node-dev src/server.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jian-kowalski/valoriza.git"
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
   },
-  "author": "jian.kowalski",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jian-kowalski/valoriza/issues"
-  },
-  "homepage": "https://github.com/jian-kowalski/valoriza#readme"
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
