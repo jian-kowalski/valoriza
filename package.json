@@ -1,0 +1,19 @@
+{
+  "name": "valoriza",
+  "version": "1.0.0",
+  "description": "Estudo de api, com node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jian-kowalski/valoriza.git"
+  },
+  "author": "jian.kowalski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jian-kowalski/valoriza/issues"
+  },
+  "homepage": "https://github.com/jian-kowalski/valoriza#readme"
+}
