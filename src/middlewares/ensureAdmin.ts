@@ -1,13 +1,16 @@
-import { Response, NextFunction, Request } from "express";
+import { Response, NextFunction, Request, request } from "express";
+import { ValidationUserService } from "../services/ValidationUserService";
 
 export function ensureAdmin(
   resquest: Request,
   response: Response,
   next: NextFunction
 ) {
-  const admin = true;
+  const { user_id } = request;
 
-  if (admin) {
+  const validationUserService = new ValidationUserService();
+
+  if (validationUserService.isUserAdmin({ user_id })) {
     return next();
   }
 
